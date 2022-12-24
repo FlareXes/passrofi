@@ -5,9 +5,7 @@ Before using this script make sure you're using [pass-otp](https://github.com/ta
 
 Check this blog post for info and explaination of this script [How to Setup and Autofill OTP Using Pass-OTP?](https://flarexes.com/how-to-setup-and-autofill-otp-using-pass-otp)
 
-<center>
-<img src="https://raw.githubusercontent.com/FlareXes/passrofi/main/passrofi-demo.gif" width="530" height="300" />
-</center>
+<p align="center"><img src="https://raw.githubusercontent.com/FlareXes/passrofi/main/passrofi-demo.gif" width="580" height="320" /></p>
 
 ## Prerequisite
 ```
