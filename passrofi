@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Set the language to US English to ensure that rofi and xdotool
+# display and type the password correctly.
+export LANG="en_US.UTF-8"
+
+# List the files in the password-store and extract the names of entries
+# without the .gpg extension.
+entries=$(ls ~/.password-store | cut --delimiter="." --fields=1)
+
+# Use rofi to display a menu of the otp entries, and allow the user to
+# choose one of the entries.
+selected_entry=$(echo "$entries" | rofi -dmenu -p "OTP: ")
+
+# Retrieve the otp for the selected entry from the password-store.
+otp=$(pass otp "$selected_entry")
+
+# Copy the retrieved otp on clipboard.
+echo -n "$otp" | xclip -selection clipboard
+
+# Type the otp into the active window on the system using xdotool.
+xdotool type --window getactivewindow "$otp"
+
+# Clear clipboard after 10 seconds.
+sleep 10
+echo -n "" | xclip -selection clipboard
