@@ -1,9 +1,9 @@
 # passrofi
-rofi/dmenu to autofill TOTP for pass-otp. A better, faster and suckless way to autofill otps.
+Rofi/dmenu to autofill TOTP for pass-otp. A better, faster and suckless way to autofill otps.
 
 Before using this script make sure you're using [pass-otp](https://github.com/tadfisher/pass-otp). A pass extension for managing one-time-password (OTP) tokens.
 
-Check this blog post for info and explaination of this script [How to Setup and Autofill OTP Using Pass-OTP?](https://flarexes.com/how-to-setup-and-autofill-otp-using-pass-otp).
+Check this blog post for info and explaination of this script [How to Setup and Autofill OTP Using Pass-OTP?](https://flarexes.com/how-to-setup-and-autofill-otp-using-pass-otp)
 
 ## Prerequisite
 ```
@@ -30,7 +30,7 @@ alt + shift + l
 ```
 
 # Resources
-- [Enhancing Security and Convenience: A Step-by-Step Guide to Use pass-OTP and passrofi for Secure 2FA Management](https://flarexes.com/how-to-setup-and-autofill-otp-using-pass-otp).
+- [A Step-by-Step Guide to Use pass-OTP and passrofi for Secure 2FA Management](https://flarexes.com/how-to-setup-and-autofill-otp-using-pass-otp).
 
 - [How to manage Linux passwords with the pass command](https://www.redhat.com/sysadmin/management-password-store).
 
