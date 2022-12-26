@@ -1,11 +1,16 @@
-# passrofi
-Rofi/dmenu to autofill TOTP for pass-otp. A better, faster and suckless way to autofill otps.
+<h1 align="center">Passrofi</h1>
+<p align="center">Rofi/dmenu to autofill TOTP for pass-otp. A better, faster and suckless way to autofill otps</p>
+
+#
+
+<img src="https://raw.githubusercontent.com/FlareXes/passrofi/main/passrofi-demo.gif" width="580" align="right" />
+
 
 Before using this script make sure you're using [pass-otp](https://github.com/tadfisher/pass-otp). A pass extension for managing one-time-password (OTP) tokens.
 
 Check this blog post for info and explaination of this script [How to Setup and Autofill OTP Using Pass-OTP?](https://flarexes.com/how-to-setup-and-autofill-otp-using-pass-otp)
 
-<p align="center"><img src="https://raw.githubusercontent.com/FlareXes/passrofi/main/passrofi-demo.gif" width="580" height="320" /></p>
+> **Note:** `Passrofi` default uses `rofi`. You can can also use `dmenu` by uncommenting 17th line and comment 13th line.
 
 ## Prerequisite
 ```

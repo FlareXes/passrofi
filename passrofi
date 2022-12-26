@@ -12,6 +12,10 @@ entries=$(ls ~/.password-store | cut --delimiter="." --fields=1)
 # choose one of the entries.
 selected_entry=$(echo "$entries" | rofi -dmenu -p "OTP: ")
 
+# Use dmenu to display a menu of the otp entries, and allow the user to
+# choose one of the entries.
+# selected_entry=$(echo "$entries" | dmenu -p "OTP: ")
+
 # Retrieve the otp for the selected entry from the password-store.
 otp=$(pass otp "$selected_entry")
 
