@@ -3,7 +3,7 @@
 
 #
 
-<img src="https://raw.githubusercontent.com/FlareXes/passrofi/main/passrofi-demo.gif" width="580" align="right" />
+<img src="https://raw.githubusercontent.com/FlareXes/passrofi/main/passrofi-demo.gif" width="460" align="right" />
 
 
 Before using this script make sure you're using [pass-otp](https://github.com/tadfisher/pass-otp). A pass extension for managing one-time-password (OTP) tokens.
