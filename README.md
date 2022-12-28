@@ -22,7 +22,7 @@ Check this blog post for info and explaination of this script [How to Setup and 
 # Installation
 
 ```
-wget https://raw.githubusercontent.com/FlareXes/passrofi/main/passrofi -o /usr/local/bin/passrofi
+wget https://raw.githubusercontent.com/FlareXes/passrofi/main/passrofi -O /usr/local/bin/passrofi
 
 sudo chmod +x /usr/local/bin/passrofi
 ```
