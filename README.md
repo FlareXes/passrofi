@@ -41,6 +41,20 @@ alt + shift + l
 
 - [How to manage Linux passwords with the pass command](https://www.redhat.com/sysadmin/management-password-store).
 
+## How to update GPG keys?
+Encrypting your OTPs with new GPG keys is a crucial security practice. To simplify this process, I've created a bash script, `passrofi-update-keys.sh`. This script automates the key update, ensuring that your OTPs remain secure. 
+Additionally, it keeps a backup of your previous keys for added safety. Existing `~/.password-store` and `~/.gnupg` will be backed up as `~/.password-store-bak`, `~/.gnupg-bak` respectively.
+
+1. Run `bash passrofi-update-keys.sh`
+2. This will decrypt and export all TOTPs' URIs into a file named `passwords.csv`.
+3. Then, Choose to either create new keys (recommended) or select existing ones.
+4. From here, Script will handle the update automatically. If any errors occur, script will stop, allowing you to debug.
+5. ***Important:* Don't forget to delete `passwords.csv` once the update is complete. The script won't do it for you.***
+
+> **Note:** I recommend updating GPG keys once or twice a year.
+
+I hope this might have saved you some time and hustle.
+
 # LICENSE
 MIT License
 
@@ -63,4 +77,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
