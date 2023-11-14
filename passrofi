@@ -1,4 +1,9 @@
-#!/bin/sh
+#!/bin/bash
+
+# Author: FlareXes
+# Twitter: @flarexes
+# Link: https://github.com/flarexes/passrofi
+
 
 # Set the language to US English to ensure that rofi and xdotool
 # display and type the password correctly.
