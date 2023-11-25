@@ -9,6 +9,15 @@
 # display and type the password correctly.
 export LANG="en_US.UTF-8"
 
+# Check if XDG_SESSION_TYPE is set and select tools compatibile to display server.
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+  TOOL_COMMAND="wtype"
+  CLIPBOARD_COMMAND="wl-copy"
+else
+  TOOL_COMMAND="xdotool type --window getactivewindow"
+  CLIPBOARD_COMMAND="xclip -selection clipboard"
+fi
+
 # List the files in the password-store and extract the names of entries
 # without the .gpg extension.
 entries=$(ls ~/.password-store | cut --delimiter="." --fields=1)
@@ -25,11 +34,11 @@ selected_entry=$(echo "$entries" | rofi -dmenu -i -p "OTP: ")
 otp=$(pass otp "$selected_entry")
 
 # Copy the retrieved otp on clipboard.
-echo -n "$otp" | xclip -selection clipboard
+echo -n "$otp" | $CLIPBOARD_COMMAND
 
-# Type the otp into the active window on the system using xdotool.
-xdotool type --window getactivewindow "$otp"
+# Type the otp into the active window on the system.
+$TOOL_COMMAND "$otp"
 
 # Clear clipboard after 10 seconds.
 sleep 10
-echo -n "" | xclip -selection clipboard
+echo -n "" | $CLIPBOARD_COMMAND

@@ -1,5 +1,7 @@
 <h1 align="center">Passrofi</h1>
-<p align="center">Rofi/dmenu to autofill TOTP for pass-otp. A better, faster and suckless way to autofill otps</p>
+<p align="center">Rofi/dmenu to autofill TOTP for pass-otp. A better, faster and suckless way to autofill otps.</p>
+
+*<p align="center">XOrg / Wayland Compatible</p>*
 
 #
 
@@ -10,13 +12,21 @@ Before using this script make sure you're using [pass-otp](https://github.com/ta
 
 Check this blog post for info and explaination of this script [How to Setup and Autofill OTP Using Pass-OTP?](https://flarexes.com/how-to-setup-and-autofill-otp-using-pass-otp)
 
-> **Note:** `Passrofi` default uses `rofi`. You can can also use `dmenu` by uncommenting 17th line and comment 13th line.
+> **Note:** `Passrofi` default uses `rofi`. You can can also use `dmenu` by uncommenting 31th line and comment 27th line.
 
 ## Prerequisite
+### For XOrg
 ```
 - Rofi / Dmenu
 - xclip
 - xdotool
+```
+
+### For Wayland
+```
+- Rofi / Dmenu
+- wl-copy
+- wtype
 ```
 
 # Installation
